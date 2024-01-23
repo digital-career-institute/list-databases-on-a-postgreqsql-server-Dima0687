@@ -28,7 +28,7 @@ public class DatabaseListerApp {
       resultSet = statement.executeQuery( "SELECT datname FROM pg_database" );
       
       if (!resultSet.next()) {
-        System.out.println("No records found in the students table.");
+        System.out.println("No records found in the pg_database.");
       } else {
 
         System.out.println( "DATABASE NAME" );
